@@ -1,21 +1,14 @@
-// Definition for singly-linked list:
-// class ListNode<T> {
-//   ListNode(T x) {
-//     value = x;
-//   }
-//   T value;
-//   ListNode<T> next;
-// }
-//
+/*
+Given a singly linked list of integers l and an integer k, remove all elements from list l that have a value equal to k.
+Solve this task in O(n) time using O(1) additional space, where n is the number of elements in the list.
+*/
+
 ListNode<Integer> removeKFromList(ListNode<Integer> l, int k) {
     ListNode<Integer> lIter = l, lIterPrev = null;
-    
     //Case of empty list
     if (l == null) 
         return null;
-    
-    
-   
+
     while (lIter != null) {
         if (lIter.value == k) {
             //Case of first element
@@ -37,6 +30,5 @@ ListNode<Integer> removeKFromList(ListNode<Integer> l, int k) {
         lIter = lIter.next;
         
     }
-    
     return l;
 }
