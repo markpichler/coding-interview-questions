@@ -1,6 +1,7 @@
 /*
 Given a singly linked list of integers l, determine whether or not it's a palindrome.
 Solve this task in O(n) time using O(1) additional space, where n is the number of elements in l.
+-CodeFights.com
 */
 
 boolean isListPalindrome(ListNode<Integer> l) {
